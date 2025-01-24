@@ -15,9 +15,9 @@ import streamlit as st
 
 # TODO: 아래 YOUR-HUGGINGFACE-API-KEY랑 OUR-GEMINI-API-KEY에 자기꺼 넣기
 if not os.environ.get("HUGGINGFACEHUB_API_TOKEN"):
-    # os.environ["HUGGINGFACEHUB_API_TOKEN"] = "YOUR-HUGGINGFACE-API-KEY"    
+    os.environ["HUGGINGFACEHUB_API_TOKEN"] = "YOUR-HUGGINGFACE-API-KEY"    
    
-#gemini_api_key = "YOUR-GEMINI-API-KEY"
+gemini_api_key = "YOUR-GEMINI-API-KEY"
 
 genai.configure(api_key=gemini_api_key)
 
